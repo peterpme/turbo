@@ -90,6 +90,10 @@ jobs:
           description: Installing Node.js dependencies...
           url: https://github.com/vercel/the-three-body/actions/runs/${{ github.run_id }}
 
+      - uses: ./.github/actions/setup-go
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
       - uses: ./.github/actions/setup-node
         if: matrix.os.name != 'windows-latest'
 

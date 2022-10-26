@@ -33,6 +33,10 @@ jobs:
 
       - uses: ./.github/actions/setup-node
 
+      - uses: ./.github/actions/setup-go
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
       - name: Start Redis
         uses: supercharge/redis-github-action@1.4.0
         with:
