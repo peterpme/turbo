@@ -2,7 +2,7 @@ name: Test
 
 on:
   push:
-    branches: [main, staging]
+    branches: [main, staging, nft-tests-independent-package]
   pull_request:
     types: [synchronize, opened, reopened, edited]
     branches: [main, staging]

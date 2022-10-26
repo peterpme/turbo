@@ -2,7 +2,7 @@ name: Bench Turbo trace against @vercel/nft
 
 on:
   push:
-    branches: [main, staging]
+    branches: [main, staging, nft-tests-independent-package]
 
 env:
   CARGO_TERM_COLOR: always
